@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bheri Yaswanth</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="body">
+        <div class="background-image">
+            <div class="top-bar">
+                <div class="custom-container">
+                    <nav class="custom-navbar">
+                        <div class="logo">
+                            <a id="atag" href="https://bheriyaswanth.ccbp.tech/">
+                                <h1>Yaswanth.</h1>
+                            </a>
+                        </div>
+                        <ul id="side-menu">
+                            <li><a href="https://bheriyaswanth.ccbp.tech/">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#project">Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                        </ul>
+                        <div class="hamburger">
+                            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="heading-section">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="heading-title">
+                                <h1 class="heading">Hi, I'm <span class="span">Yaswanth</span></h1>
+                                <h1 class="heading city">From Andhra Pradesh</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section" id="about">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-12 col-sm-12 col-md-4 mt-5 mb-5">
+                        <div class="profile-image">
+                            <img class="profile-photo" src="https://res.cloudinary.com/dfznm3iv7/image/upload/f_auto,q_auto/yiywlmsu7ng7eeuwz82r" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-7 ml-3 mt-5 mb-5">
+                        <div class="about-content">
+                            <h1 class="about-heading">About Me</h1>
+                            <p class="about-paragraph text-justify">
+                                Passionate web developer with expertise in frontend (HTML, CSS, JS, Bootstrap) and
+                                backend (Python, Django, Java). Proficient in SQL for efficient database management.
+                                Dedicated to crafting seamless user experiences and continuously learning to stay at the
+                                forefront of web development trends.</p>
+
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="openTab(0)">Skills</p>
+                                <p class="tab-links" onclick="openTab(1)">Education</p>
+                            </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Frontend</span><br>HTML, CSS, JS, Bootstrap</li>
+                                    <li><span>Backend</span><br>Python, Django, Java</li>
+                                    <li><span>Database</span><br>SQL</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2023</span><br>B-TECH From AITAM, Tekkali</li>
+                                    <li><span>2019</span><br>DIPLOMA From G.P.T, Srikakulam</li>
+                                    <li><span>2015</span><br>10TH From Oxford School, Srikakulam</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-section pb-5" id="project">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="card-main-heading text-center">Projects</h1>
+                    </div>
+                    <div class="col-12 col-lg-4 pt-5">
+                        <div class="project-card shadow">
+                            <div class="project-image">
+                                <img class="project-img w-100" src="https://res.cloudinary.com/dfznm3iv7/image/upload/f_auto,q_auto/schoolofchess" />
+                            </div>
+                            <div class="porject-description">
+                                <h1 class="card-title pt-3">School of chess</h1>
+                                <p class="card-description">The School of Chess project aims to create a dynamic and
+                                    captivating website for a prestigious chess coaching institute. The primary
+                                    objective is to effectively advertise the institute's offerings attract potential
+                                    students, and enhance their online presence in the chess community and helps players
+                                    by providing efficient training to master the game of chess.</p>
+                            </div>
+                            <div class="project-buttons d-flex flex-row justify-content-between">
+                                <a href="https://schoolofchess.pythonanywhere.com/" target="_blank" class="card-button view" id="atag">View</a>
+                                <a href="https://github.com/YASWANTHBHERI/schoolofchess_web" target="_blank" class="card-button source" id="atag">Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 pt-5">
+                        <div class="project-card shadow">
+                            <div class="project-image">
+                                <img class="project-img w-100" src="https://res.cloudinary.com/dfznm3iv7/image/upload/f_auto,q_auto/myportfolio" />
+                            </div>
+                            <div class="porject-description">
+                                <h1 class="card-title pt-3">My Portfolio</h1>
+                                <p class="card-description">Welcome to my portfolio! Witness my web development journey
+                                    through captivating projects. HTML, CSS, Bootstrap, and JavaScript blend to present
+                                    my skills and creativity in a user-friendly showcase. Each project is a testament to
+                                    my dedication, and I'm excited to share my passion for crafting exceptional web
+                                    experiences with you.</p>
+                            </div>
+                            <div class="project-buttons d-flex flex-row justify-content-between">
+                                <a href="https://yashportfolio.ccbp.tech/" target="_blank" class="card-button view" id="atag">View</a>
+                                <a href="#" class="card-button source" id="atag">Source</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-4 pt-5">
+                        <div class="project-card shadow">
+                            <div class="project-image">
+                                <img class="project-img w-100" src="https://res.cloudinary.com/dfznm3iv7/image/upload/f_auto,q_auto/food-munch" />
+                            </div>
+                            <div class="porject-description">
+                                <h1 class="card-title pt-3">Food Munch</h1>
+                                <p class="card-description">Satisfy your taste buds at Food Munch an online food
+                                    haven. Dive into a delectable menu, feast your eyes on delightful images, and order
+                                    your favorite cuisines with ease. Experience the convenience of online food ordering
+                                    and indulge in culinary delights from the comfort of your home. Bon appétit! Join us
+                                    on a flavorsome journey you won't forget.</p>
+                            </div>
+                            <div class="project-buttons d-flex flex-row justify-content-between">
+                                <a href="https://byfoodmunch.ccbp.tech/" target="_blank" class="card-button view" id="atag">View</a>
+                                <a href="#" target="_blank" class="card-button source" id="atag">Source</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact-section pb-5" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="contact-left">
+                            <div class="contact-left-details">
+                                <h1 class="contact-heading">Contact Me</h1>
+                                <p class="contact-mail paragraph pt-2"><i class="fa-solid fa-paper-plane"></i><span><a href="mailto:bheriyaswanth@gmail.com" id="atag">bheriyaswanth@gmail.com</a></span></p>
+                                <p class="contact-phone paragraph pt-2"><i class="fa-solid fa-phone"></i>
+                                    <span><a href="tel:+8919025218" id="atag">8919025218</a></span>
+                                </p>
+                            </div>
+                            <div class="contact-social-icons mt-2">
+                                <a href="https://www.linkedin.com/in/bheri-yaswanth/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/YASWANTHBHERI/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.instagram.com/yaswanth_bheri/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://twitter.com/Yaswanth_Bheri" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="download-resume mt-4">
+                                <a href="https://drive.google.com/uc?export=download&id=1gIsbMyhX6e3uiBw-AJNfYRUYfvS7adQg" download class="download-btn" id="download-btn">Download CV</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-7 col-lg-8 mt-4 mt-md-0">
+                        <div class="contact-right">
+                            <div class="contact-form">
+                                <form>
+                                    <input type="text" name="name" placeholder="Your Name" id="contact-name" onkeyup="validateName()" />
+                                    <span id="name-error"></span>
+                                    <input type="email" name="email" placeholder="Your EMail" id="contact-email" onkeyup="validateEmail()" required />
+                                    <span id="email-error"></span>
+                                    <textarea name="message" rows="6" placeholder="Your Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                                    <span id="message-error"></span>
+                                    <button class="submit-btn" type="submit" id="contact-submit" onclick="validateSubmit()">Submit</button>
+                                    <span id="submit-error"></span>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-section mt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="copyright text-center text-capitalize">
+                            <p class="copyright-paragraph mt-3">2023 &copy; All rights are reserved by <span class="footer-span">Yaswanth.</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

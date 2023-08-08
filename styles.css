@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background: #080808;
+}
+
+.background-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://res.cloudinary.com/dfznm3iv7/image/upload/v1690733195/y4gjduvfruauh8quuv4m.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.custom-container {
+    padding: 20px 10%;
+
+}
+
+.custom-navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.custom-navbar .logo {
+    margin-right: auto;
+    color: #fff;
+    margin-top: -5px;
+    cursor: pointer;
+
+}
+
+.custom-navbar .logo h1:first-letter {
+    color: #ff004f;
+    font-weight: 800;
+}
+
+.custom-navbar .logo h1 {
+    font-weight: 600;
+    font-size: 30px;
+    font-family: 'Kurale';
+}
+
+.custom-navbar ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+
+
+}
+
+.custom-navbar ul li a {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
+    position: relative;
+    text-decoration: none;
+
+}
+
+.custom-navbar ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: #ff004f;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.custom-navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.custom-navbar .fa-solid {
+    display: none;
+    color: #ff004f;
+}
+
+/* heading-section styles */
+.heading-section {
+    padding: 0px 10%;
+}
+
+.heading-title {
+    margin-top: 20%;
+
+}
+
+.heading {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.span {
+    color: #ff004f;
+}
+
+/*about*/
+.about-section {
+    padding: 0px 10%;
+    color: #ababab;
+}
+
+.about-heading {
+    font-size: 36px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.profile-photo {
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+.tab-titles {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.tab-titles p {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    background: #ff004f;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul {
+    list-style-type: none;
+}
+
+.tab-contents span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+/* Project-section */
+
+
+.card-main-heading {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.project-card {
+    background-color: #1a1919;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.card-description {
+    color: #9aa5b1;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.card-button {
+    padding: 8px 25px;
+    border: none;
+    background-color: #ff004f;
+    color: #fff;
+}
+
+#atag {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#atag {
+    color: #fff;
+}
+
+/*Contact-section*/
+.contact-heading {
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-left-details i {
+    color: #ff004f;
+    padding-right: 10px;
+}
+
+.paragraph {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-social-icons i {
+    color: rgb(171, 171, 171);
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.contact-social-icons i:hover {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+
+.download-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff004f;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+#download-btn {
+    text-decoration: none;
+}
+
+#download-btn:hover {
+    color: #fff;
+}
+
+.contact-form form {
+    width: 100%;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    border-radius: 6px;
+    resize: none;
+}
+
+.submit-btn {
+    padding: 5px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ff004f;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+/*footer*/
+.copyright {
+    width: 100%;
+    padding: 5px;
+    background-color: #262626;
+}
+
+.copyright-paragraph {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer-span {
+    color: #ff004f;
+    font-weight: 600;
+}
+
+/* form-validations styles */
+form span {
+    color: #ff004f;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+
+
+
+
+
+@media(max-width:768px) {
+    .background-image {
+        background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("https://res.cloudinary.com/dfznm3iv7/image/upload/v1690733195/y4gjduvfruauh8quuv4m.jpg");
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .custom-navbar #side-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        position: absolute;
+        gap: 30px;
+        background: rgba(0, 0, 0, 1);
+        z-index: 2;
+        transition: 0.5s;
+    }
+
+    .custom-navbar ul li a {
+        font-size: 32px;
+    }
+
+    .custom-navbar .fa-xmark {
+        top: 3%;
+        right: 8%;
+    }
+
+    .custom-navbar .fa-bars {
+        top: 3%;
+        right: 8%;
+    }
+
+    .custom-navbar .fa-solid {
+        position: absolute;
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    .heading-title {
+        margin-top: 30vh;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+
+    .city {
+        font-size: 25px;
+    }
+}
